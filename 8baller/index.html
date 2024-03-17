@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billiard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="onLoad()">
+  <div id="overlay">
+    <div id="loading" class="hide">
+      <h1>Loading, please wait...</h1>
+      <div class="progress">
+        <div id="prog-bar" class="progress-bar" role="progressbar" aria-valuenow="0"
+          aria-valuemin="0" aria-valuemax="100">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="mainMenu" class="hide">
+      <div>
+        <h1>3D Billiards</h1>
+        <button type="button" onclick="gui.play8BallClicked()" class="btn btn-primary btn-lg btn-block">Play</button>
+      </div>
+    </div>
+      <div class="shootControls">
+        <div class="power">
+          <button id="btn_ball" type="button" class="btn btn-success">Hit</button>
+        </div>
+      </div>
+    <div id="canvas"></div>
+  </div>
+
+  <script src="lib/three.js/build/three.min.js"></script>
+  <script src="lib/cannon.min.js"></script>
+  <script src="lib/stats.min.js"></script>
+  <script src="lib/OrbitControls.js"></script>
+
+  <script src="js/CannonUtils.js"></script>
+  <script src="js/Arch.js"></script>
+  <script src="js/Gui.js"></script>
+  <script src="js/Hole.js"></script>
+  <script src="js/LongWall.js"></script>
+  <script src="js/ShortWall.js"></script>
+  <script src="js/Table.js"></script>
+  <script src="js/Ball.js"></script>
+  <script src="js/WhiteBall.js"></script>
+  <script src="js/TableLight.js"></script>
+  <script src="js/Game.js"></script>
+  <script src="js/EightBallGame.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

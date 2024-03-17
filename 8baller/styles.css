@@ -1,0 +1,42 @@
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: #000;
+}
+
+#canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#loading {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#mainMenu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#mainMenu div {
+  width: 60%;
+  margin: 15% 20% 0;
+  text-align: center;
+}
